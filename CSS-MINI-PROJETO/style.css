@@ -1,0 +1,169 @@
+#div{
+    text-align:center;
+    color: whitesmoke;
+    background-color: black;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+#ex1{
+    color: red;
+    font-size: 15px;
+}
+
+#ex2{
+    color: rgb(17, 0, 255);
+    font-size: 13px;
+}
+
+#link1{
+    color: rgb(0, 255, 234);
+}
+
+#link2{
+    color: rgb(255, 0, 191);
+    text-decoration: underline;
+}
+
+#id{
+    color: blue;
+}
+
+.class{
+    color: red;
+}
+
+#cm{
+   background-color: red;
+   width: 1cm;
+   height: 1cm;
+}
+#mm{
+    background-color: black;
+    width: 5mm;
+    height: 5mm;
+ }
+ #in{
+    background-color: red;
+    width: 1in;
+    height: 1in;
+ }
+ #px{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+ }
+ #pt{
+    background-color: red;
+    width: 10pt;
+    height: 10pt;
+ }
+ #pc{
+    background-color: black;
+    width: 1pc;
+    height: 1pc;
+ }
+
+
+ #conteiner{
+    font-size: 20px;
+    color: red;
+    background-color: black;
+    width: 50vw;
+    height: 50vh;
+ }
+
+ #inside{
+    font-size: 2em;
+    color: black;
+    background-color: red;
+    width: 80%;
+    height: 80%;
+ }
+
+ #margin{
+    font-size: 3rem;
+    color: red;
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: bold;
+ }
+
+ #central{
+   color: black;
+   background-color:gold;
+   margin-top: 20px;
+   padding-bottom: 20px;
+}
+
+ #padding{
+    color:gold;
+    background-color: red;
+ }
+
+ #borda{
+    font///0/-size: 3rem;
+    border-width: 5px 20px 15px 10px;
+    border-style: solid;
+    border-color: black;
+    border-top-color:red ;
+ }
+
+ #dashed{
+    font-size: 3rem;
+    border-width: 10px;
+    border-style: dashed;
+    border-color: red;
+ }
+
+ #dotted{
+    font-size: 3rem;
+    border-width: 10px;
+    border-style: dotted;
+ }
+
+ #boxmodel{
+    background-color: blue;
+    margin: 5px;
+    padding:5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+ }
+ 
+ #cont_boxmodel{
+    background-color: red;
+    padding:5px;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+ }
+
+ #link{
+   font-size: 4em;
+   color: white;
+   text-decoration: none;
+   background-color: rgb(255, 15, 15);
+   border-radius: 10px;
+   padding: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-variant: small-caps;
+   border-color: rgb(136, 8, 8);
+   border-style: solid;
+ }
+ #link:hover{
+   border-style: solid;
+   border-color: rgb(136, 8, 8);
+   color: rgb(255, 14, 14);
+   background-color: white;
+ }
+ #link:active{
+   border-style: solid;
+   color: white;
+   background-color: rgb(136, 8, 8);
+   border-color: red;
+
+ }
