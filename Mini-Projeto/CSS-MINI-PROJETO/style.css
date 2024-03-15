@@ -1,3 +1,4 @@
+/*grid layout*/
 #div{
     text-align:center;
     color: whitesmoke;
@@ -22,6 +23,54 @@
     color: rgb(255, 0, 191);
     text-decoration: underline;
 }
+
+.lista1{
+   list-style-type: square;
+   color: rgb(251, 255, 0);
+}
+
+.lista2{
+   list-style-type: circle;
+   color: rgb(9, 255, 0);
+}
+.tableaux{
+   display: flex;
+}
+.tabela {
+  
+   border-collapse: collapse; /* Define a separação entre as bordas */
+   text-align: center;
+   justify-content: center; 
+   align-items: center;
+   flex:1
+}
+.container1 {
+   background-color: rgb(184, 184, 184);
+   border: 1px solid rgb(0, 0, 0);
+   padding: 5px;
+ }
+
+ .container2 {
+   background-color: rgb(90, 90, 90);
+   border: 1px solid rgb(0, 0, 0);
+   padding: 5px;
+ }
+ .txtaux {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+ }
+.imgaux {
+   display: flex;
+   justify-content: right;
+ /* Mantém a proporção da imagem */
+}
+img {
+   width: 300px;
+   height: auto; 
+   margin-bottom: 50px;
+}
+
 
 #id{
     color: blue;
@@ -101,11 +150,11 @@
  }
 
  #borda{
-    font///0/-size: 3rem;
+    font-size: 3rem;
     border-width: 5px 20px 15px 10px;
     border-style: solid;
     border-color: black;
-    border-top-color:red ;
+    border-top-color:red;
  }
 
  #dashed{
