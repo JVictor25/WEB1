@@ -1,6 +1,6 @@
-package Itens;
+package Lp2_Aula09.Itens;
 import java.util.Calendar;
-
+import java.text.ParseException;
 public class LojaView {
 	Deposito deposito = new Deposito();
 	int n=2;
@@ -9,9 +9,7 @@ public class LojaView {
 	Produto produtoDuravel2 = new ProdutoDuravel("Livro", 74.49, "Duna", "Uma estonteante mistura de aventura e misticismo, ecologia e política", 5);
 	Produto produtoDuravel3 = new ProdutoDuravel("Celular", 4099.00, "Sansung-S23","Tem um grande display de 6.1 polegadas com uma resolução de 2340x1080 pixel. As funcionalidades oferecidas pelo Samsung Galaxy S23 são muitas e inovadoras.", 4);
 	
-	 Date dataValidade1 = new Date();
-	 Date dataValidade2 = new Date();
-	 Date dataValidade3 = new Date();
+
 	
 	 Calendar calendar = Calendar.getInstance();
      calendar.set(Calendar.YEAR, 2024);

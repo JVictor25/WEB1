@@ -1,10 +1,10 @@
-package Itens;
+package Lp2_Aula09.Itens;
 
 public class Produto {
-	private String nome;
-	private double preco;
-	private String marca;
-	private String descricao;
+	protected String nome;
+	protected double preco;
+	protected String marca;
+	protected String descricao;
 	
 	public Produto(String nome, double preco, String marca, String descricao) {
 		super();

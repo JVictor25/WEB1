@@ -1,4 +1,4 @@
-package imd.modelo;
+package Lp2_Aula09.Lp2_Aula08;
 
 public class Produto{
 	

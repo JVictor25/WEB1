@@ -1,4 +1,4 @@
-package Itens;
+package Lp2_Aula09.Itens;
 
 public class ProdutoDuravel extends Produto  {
 	
