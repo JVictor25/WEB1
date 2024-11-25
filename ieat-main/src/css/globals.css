@@ -1,0 +1,281 @@
+/*reset dos atributos padrões*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*formatação de textos*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: darkblue;
+    color: white;
+    padding: 1.5vw;
+    box-shadow: 0 0 6px 6px rgb(163, 163, 163);
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.sem-margin{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.conteudo{
+    flex-direction: row;
+}
+.conteudo-coluna{
+    flex-direction: column;
+}
+.artig{
+    text-align: center;
+    flex-direction: column;
+    width: 80%;
+}
+.centralizador{
+    justify-content: center;
+}
+
+.post{
+    flex-wrap: wrap;
+    display: flex;
+    width: 95%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.post-curso{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+    margin-right: 15px;
+    width: 30%;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 0 10px  rgb(179, 179, 182);   
+    text-align: center;
+}
+.text{
+    width: 90%;
+    overflow: auto;
+    height: 175px;
+    text-align: left;
+}
+.org{
+    width: 50%;
+}
+.lista{
+    text-align: left;
+}
+.lista-organizada{
+    width: 35%;
+}
+ul.list{
+    margin: 25px;
+    list-style-type: circle;
+   
+}
+li{
+    margin-top: 5px;
+}
+p{
+    margin: 10px;
+    text-align: left;
+}
+h1{
+    margin: 25px;
+}
+h2{
+    margin: 20px;
+}
+h3{
+    font-size: 15px;
+    margin: 15px;
+}
+h4{
+    margin: 15px;
+}
+.logomarca {
+    width: 30%;
+    height: auto;
+}
+
+img.logo{
+    width: 90%;
+}
+img.post-img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px  rgb(174, 174, 177);   
+}
+img.artigo{
+    width: 100%;
+    margin: 20px;
+    height: fit-content;
+    border-radius: 5px;
+}
+.sites-cabecalho {
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: aqua;
+}
+
+a:active {
+    color: indigo;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border-style: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+button:hover{
+    background-color: darkblue;
+}
+/* Footer */
+
+#footer {
+    margin-bottom: 0 !important;
+    box-shadow: 0 0 6px 6px rgb(163, 163, 163);
+}
+
+#footer li {
+    display: inline-block;
+    padding: 0.3rem 0.3rem;
+}
+
+table{
+    margin: 35px;
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+table.coluna{
+    margin: 35px;
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;   
+}
+th,td{
+    padding: 5px;
+    border: 1px solid black;
+}
+ tr:nth-child(even) { 
+    background-color: rgb(241, 246, 247);
+} 
+ tr:nth-child(odd) {
+    background-color: rgb(121, 147, 224);
+} 
+
+
+.margin-right {
+    margin-right: 4vw;
+}
+
+@media (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    table{
+        margin: 5px;
+    }
+
+    .logomarca{
+        width: 65%;
+    }
+    nav,p,li,table{
+        font-size: 16px;
+    }
+    .container{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    .post-curso{
+        width: 100%;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h2,h4,button{
+        font-size: 12px;
+    }
+    nav ul li a{
+        font-size: 14px;
+    }
+    img.logo{
+        width: 100%;
+    }
+    .text{
+        height: auto;
+    }
+  }
+
+
+  @media (min-width: 600px) and (max-width: 1200px) {
+    table{
+        font-size: 10px;
+    }
+    img.logo{
+        width: 100%;
+    }
+    .logomarca{
+        width: 60%;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p,button{
+        font-size: 12px;
+    }
+    .post-curso{
+        width: 45%;
+    }
+  }
