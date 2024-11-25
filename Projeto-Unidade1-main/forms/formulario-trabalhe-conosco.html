@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEAT - Trabalhe Conosco</title>
+  <link rel="stylesheet" href="../css/style-ieat.css">
+  <link rel="stylesheet" href="../css/style-forms.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="../imgs/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <a href="inicio.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img class="logo" src="../imgs/logo_escuro_1.png" alt="Logo">
+    </a>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="../inicio.html" class="nav-link px-2 link-white">INÍCIO</a></li>
+        <li><a href="../sobre.html" class="nav-link px-2 link-white">SOBRE</a></li>
+        <li><a href="../cursos.html" class="nav-link px-2 link-white">CURSOS</a></li>
+        <li><a href="../docentes.html" class="nav-link px-2 link-white">DOCENTES</a></li>
+        <li><a href="formulario-trabalhe-conosco.html" class="nav-link px-2 link-white">TRABALHE CONOSCO</a></li>
+        <li><a href="formulario-contato.html" class="nav-link px-2 link-white">CONTATO</a></li>
+    </ul>
+
+    <div id="login" class="col-md-3 text-end">
+      <a type="button" class="btn btn-secondary mx-5" href="cart.html">
+        <img src="../imgs/carrinho.png"  width="24" height="24" alt="Carrinho de Compras">
+    </a>
+        <a type="button" class="btn btn-outline-primary me-2" href="login.html">Login</a>
+        <a type="button" class="btn btn-primary" href="formulario-matricula.html">Registrar-se</a>
+    </div>
+    <div id="loggedin">
+        <p id="message"></p>
+        <button type="button" class="btn btn-secondary">Sair</button>
+    </div>
+</header>
+  <form id="registerTeacherForm">
+    <br>
+    <div class="work">
+      <h2>Trabalhe Conosco</h2>
+      <h4>Cadastre seu currículo e participe das nossas seleções para ser um dos nossos colaboradores</h4>
+      <br>
+      <hr><br>
+    </div>
+    <div class="form-group">
+      <label for="name">Nome:*</label>
+      <input type="text" id="name" name="name" placeholder="Seu nome" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail:*</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+    </div>
+
+    <div class="form-group">
+      <label for="i-tel">Telefone 1:*</label>
+      <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" placeholder="99 99999-9999"
+        required>
+    </div>
+    <div class="form-group">
+      <label for="i-tel">Telefone 2:</label>
+      <input type="tel" name="phone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" id="i-tel" placeholder="99 99999-9999">
+    </div>
+    <div class="form-group">
+      <label for="cpf">CPF:*</label>
+      <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"
+        title="CPF deve estar no formato 000.000.000-00" required>
+    </div>
+    <div class="form-group"></div>
+    <label for="i-date">Qual a data do seu nascimento?</label>
+    <input type="date" name="bday" id="i-date" max="2021-11-03"><br /><br />
+    </div>
+    <div class="form-group">
+      <label for="Genero">Gênero:</label>
+      <select id="Genero" name="Genero">
+        <option value="" selected disabled hidden>Selecione</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Outro">Outro</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="estado">Estado Civil:*</label>
+      <select id="estado" name="estado" required>
+        <option value="" selected disabled hidden>Selecione</option>
+        <option value="Solteiro(a)">Solteiro(a)</option>
+        <option value="Casado(a)">Casado(a)</option>
+        <option value="Viuvo(a)">Viuvo(a)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="def">Possui alguma deficiencia?*</label>
+      <input type="radio" name="def" value="possuidef" required> Sim
+      <input type="radio" name="def" value="naopossuidef"> Não
+    </div>
+    <div class="form-group">
+      <label for="formacao">Formação:</label>
+      <select id="formacao" name="formacao">
+        <option value="" selected disabled hidden>Selecione</option>
+        <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+        <option value="Ensino Fundamental Cursando">Ensino Fundamental Cursando</option>
+        <option value="Ensino Fundamental Completo">Ensino Fundamental Completo</option>
+        <option value="Ensino Médio Incompleto">Ensino Médio Incompleto</option>
+        <option value="Ensino Médio Cursando">Ensino Médio Cursando</option>
+        <option value="Ensino Médio Completo">Ensino Médio Completo</option>
+        <option value="Ensino Técnico Incompleto">Ensino Técnico Incompleto</option>
+        <option value="Ensino Técnico Cursando">Ensino Técnico Cursando</option>
+        <option value="Ensino Técnico Completo">Ensino Técnico Completo</option>
+        <option value="Mestrado">Ensino Superior Incompleto</option>
+        <option value="Ensino Superior Cursando">Ensino Superior Cursando</option>
+        <option value="Ensino Superior Completo">Ensino Superior Completo</option>
+        <option value="MBA">MBA</option>
+        <option value="Mestrado">Mestrado</option>
+        <option value="Doutorado">Doutorado</option>
+        <option value="Pós Graduação">Pós Graduação</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="cargo">Cargo Pretendido:*</label>
+      <select id="cargo" name="cargo" required>
+        <option value="" selected disabled hidden>Selecione</option>
+        <option value="Professor de Lógica de Progamação">Professor de Lógica de Progamação</option>
+        <option value="Professor especialista em IOT">Professor especialista em IOT</option>
+        <option value="Professor especialista em IA">Professor especialista em IA</option>
+        <option value="Auxiliar Administrativo">Auxiliar Administrativo</option>
+        <option value="Estagio em atendimento ao cliente">Estagio em atendimento ao cliente</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="register-password">Senha:</label>
+      <input type="password" id="register-password" name="password" placeholder="Sua senha" required>
+    </div>
+    <div class="form-group">
+      <label for="register-confirm-password">Confirme a Senha:</label>
+      <input type="password" id="register-confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+    </div>
+
+    <button class="benviar" type="submit">Enviar</button>
+    <button class="blimpar" type="reset">Limpar</button>
+  </form>
+  <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap" />
+            </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">&copy; 2024 IEAT. All Rights Reserved.</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex margin-right">
+        <li class="ms-3">
+            <a class="text-muted" href="#">
+                <img src="../imgs/twitter.png" width="24" height="24" alt="Twitter">
+            </a>
+        </li>
+        <li class="ms-3">
+            <a class="text-muted" href="#">
+                <img src="../imgs/github.png" width="24" height="24" alt="Github">
+            </a>
+        </li>
+        <li class="ms-3">
+            <a class="text-muted" href="#">
+                <img src="../imgs/discord.png" width="24" height="24" alt="Discord">
+            </a>
+        </li>
+    </ul>
+
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <script src="js/registerTeacher.js"></script>
+</body>
+
+</html>
