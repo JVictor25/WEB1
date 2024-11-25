@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>To-Do List</title>
+ <link rel="stylesheet" href="../CSS-MINI-PROJETO/style.css">
+</head>
+<body>
+ <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <form id="formTarefa">
+      <div>
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" required>
+      </div>
+      <div>
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+      </div>
+      <div>
+        <label for="comentario">Comentário:</label>
+        <input type="text" id="comentario" required>
+      </div>
+      <div>
+        <label for="prioridade">Prioridade:</label>
+        <select id="prioridade" required>
+          <option value="ALTA">ALTA</option>
+          <option value="MÉDIA">MÉDIA</option>
+          <option value="BAIXA">BAIXA</option>
+        </select>
+      </div>
+      <div>
+        <label for="notificacao">Notificação:</label>
+        <select id="notificacao" required>
+          <option value="SIM">SIM</option>
+          <option value="NÃO">NÃO</option>
+        </select>
+      </div>
+      <button id="botaoGrande" type="submit">Adicionar Tarefa</button>
+      <button id="botaoGrande" type="button" id="cancelar">Cancelar</button>
+    </form>
+    <select id="ordenacao">
+      <option value="default">Selecione uma opção de ordenação</option>
+      <option value="dataCriacao">Data de Criação</option>
+      <option value="dataTarefa">Data da Tarefa</option>
+      <option value="prioridade">Prioridade</option>
+      <option value="descricao">Descrição</option>
+  </select>
+  <script>
+  document.getElementById('ordenacao').addEventListener('change', function() {
+    const ordenacaoSelecionada = this.value;
+    switch (ordenacaoSelecionada) {
+      case 'dataCriacao':
+            ordenarPorDataCriacao();
+            break;
+        case 'dataTarefa':
+            ordenarPorDataTarefa();
+            break;
+        case 'prioridade':
+            ordenarPorPrioridade();
+            break;
+        case 'descricao':
+            ordenarPorDescricao();
+            break;
+        default:
+            // Nenhuma ação específica para a opção padrão
+            break;
+    }
+});
+  </script>
+  <p id="naoHa"> Não há tarefas cadastradas</p>
+    <ul id="listaTarefas"></ul>
+ </div>
+
+ <script src="../JS-MINI-PROJETO/script.js"></script>
+</body>
+</html>
